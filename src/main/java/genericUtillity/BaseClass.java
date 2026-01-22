@@ -38,6 +38,7 @@ public class BaseClass {
 			 d=new FirefoxDriver();
 		 else
 			 d=new ChromeDriver();
+		 sDriver=d;
 	  sUtil.implicitWait(d, 10);
 	  sUtil.maximizeWindow(d);
 	  String Url = pUtil.getDatafromPropertiesFile("url");

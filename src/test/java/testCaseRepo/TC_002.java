@@ -27,7 +27,7 @@ public class TC_002 extends BaseClass{
 		String title= eUtil.getSingleCellValueInExcel("Leads", 4, 3);
 		String leadsource = eUtil.getSingleCellValueInExcel("Leads", 4, 4);
 		String mobile = eUtil.getSingleCellValueInExcel("Leads", 4, 5);
-		Assert.fail();
+		
 		cp.createLeadOperation(lname, company, mobile, title, leadsource);
 	}
 

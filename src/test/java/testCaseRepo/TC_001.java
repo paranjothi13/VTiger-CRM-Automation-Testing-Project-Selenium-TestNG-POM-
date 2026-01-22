@@ -19,7 +19,7 @@ public class TC_001 extends BaseClass{
 	createLeadsPage cp  = new createLeadsPage(d);
 	String fname=eUtil.getSingleCellValueInExcel("Leads", 1, 1);
 	String lname=eUtil.getSingleCellValueInExcel("Leads", 1, 2);	String company=eUtil.getSingleCellValueInExcel("Leads", 1, 3);
-	Assert.fail();
+	
 	cp.createLeadOperation(fname,lname,company);
 	}
 
